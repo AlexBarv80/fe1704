@@ -1,10 +1,17 @@
 <?php
-function customMultiply($a, $b){
-    return $a + $b;
+
+function fibonacci($n)
+{
+    if ($n < 3) {
+        return 2;
+    }
+    else {
+        return fibonacci($n-1) + fibonacci($n-2);
+    }
 }
-echo customMultiply(0, );
-hghsfdhds
-hgdshshgsg
-hgshsghgd
-hgshgfv
-bbb
+
+for ($n = 1; $n <= 10; $n++) {
+    echo(fibonacci($n) . ", ");
+}
+echo("...\n")
+?>
